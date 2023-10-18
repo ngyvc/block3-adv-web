@@ -1,6 +1,9 @@
 # block3-adv-web
 Block 3 - Advanced Web Programming Course Notes
 
+# PHP Tutorial
+[PHP Tutorial](https://www.phptutorial.net/)
+
 # Setup Information
 
 ## VS Code Portable
@@ -43,3 +46,7 @@ To turn on the native bracket pair colorizer and linked editing.
 - [Git Installation for Mac](https://formulae.brew.sh/formula/git) using [Homebrew](https://brew.sh/)
 - [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [Sourcetree](https://www.sourcetreeapp.com/)
+
+```git config --global user.name "Peter Ng"```
+```git config --global user.email "ngy@vaniercollege.qc.ca"```
+
