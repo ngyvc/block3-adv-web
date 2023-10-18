@@ -2,7 +2,7 @@ Hi!.
 
 Topics:
 
-
+new things
 .gitignore
 mac resource forks
 save vs commit
