@@ -8,4 +8,10 @@
 - objects-generic.php : Generic version of an Object / class
 - logic.php : using invert / not of an expression
 
-`echo "hi!"`
+Example of a block of code using 3 `s
+
+```
+echo "hi! ";
+echo "hello ";
+echo "world!";
+```
