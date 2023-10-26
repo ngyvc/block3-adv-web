@@ -3,6 +3,7 @@
 class ObjectName {
     private $property1;
     private $property2 = 0;
+    public $isActive = false;
 
     public function __construct() {
         $this->property1 = "not set";
@@ -24,3 +25,4 @@ class ObjectName {
 $testObject1 = new ObjectName();
 // $testObject1->action(123);
 echo $testObject1->ask();
+echo $testObject1->isActive ? "active" : "not-active";
