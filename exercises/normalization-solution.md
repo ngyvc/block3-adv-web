@@ -199,6 +199,7 @@ Employees of InstantCover and their contracts to work at hotels.
 | 113567WD | C1024      | 16           |
 | 234111XA | C1024      | 24           |
 | 712670YD | C1025      | 28           |
+| 113567WD | C1025      | 16           |
 
 | NIN      | eName        |
 | -------- | ------------ |
