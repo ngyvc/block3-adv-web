@@ -216,10 +216,3 @@ Employees of InstantCover and their contracts to work at hotels.
 | ---------- | ------- |
 | C1024      | H25     |
 | C1025      | H4      |
-
-| NIN      | contractNo | hoursPerWeek |
-| -------- | ---------- | ------------ |
-| 113567WD | C1024      | 16           |
-| 234111XA | C1024      | 24           |
-| 712670YD | C1025      | 28           |
-| 113567WD | C1025      | 16           |
