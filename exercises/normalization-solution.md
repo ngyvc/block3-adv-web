@@ -136,11 +136,11 @@ Details of patient dental appointments.
 
 | staffNo | dentistName   | patientNo | patientName   | appointment date / time | surgeryNo |
 | ------- | ------------- | --------- | ------------- | ----------------------- | --------- |
-| S1011   | Tony Smith    | P100      | Gillian White | 12-Aug-03 10:00         | SI0       |
-| S1011   | Tony Smith    | P105      | Till Bell     | 13-Aug-03 12:00         | SIS       |
+| S1011   | Tony Smith    | P100      | Gillian White | 12-Aug-03 10:00         | S10       |
+| S1011   | Tony Smith    | P105      | Till Bell     | 13-Aug-03 12:00         | S15       |
 | S1024   | Helen Pearson | P108      | Tan MacKay    | 12-Sept-03 10:00        | S10       |
 | S1024   | Helen Pearson | P108      | Tan MacKay    | 14-Sept-03 10:00        | S10       |
-| S1032   | Robin Plevin  | P105      | Till Bell     | 14-0ct-03 16:30         | SI5       |
+| S1032   | Robin Plevin  | P105      | Till Bell     | 14-0ct-03 16:30         | S15       |
 | S1032   | Robm Plevin   | P110      | Toba Walker   | 15-0ct-03 18:00         | S13       |
 
 ### Solution
