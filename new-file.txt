@@ -8,4 +8,4 @@ mac resource forks
 save vs commit
 discard changes
 pull & push
-branches
+branches!!!
