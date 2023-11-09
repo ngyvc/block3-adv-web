@@ -15,6 +15,7 @@ class DriversLicense extends Id {
     #classType
     #points
     #fees
+    +__construct()
     +isValid()
     +viewPoints()
     +reprimand()
