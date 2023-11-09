@@ -1,28 +1,51 @@
 @startuml
 scale 3
 class ClassName {
+    +public
     -private
     #protected
-    +public
+    +publicMethod()
     -privateMethod()
     #protectedMethod()
-    +publicMethod()
 }
-class Parent {
+
+class Grandparent {
     age
     talk()
 }
+
+class Parent extends Grandparent {
+    talk()
+}
+
 class Child extends Parent {
     cry()
 }
+
 class BankAccount {
-    balance
-    deposit()
-    withdrawl()
+    -balance
+    +__construct($balance)
+    +getBalance()
+    +deposit($amount)
+    +withdrawl($amount)
 }
-class SavingsAccount extends BankAccount
-class CheckingAccount extends BankAccount
-' class Vehicle {
+
+class CheckingAccount extends BankAccount {
+    -transactions
+    -withdrawlLimit
+    -monthlyFee
+    +__construct($balance, $withdrawlLimit)
+    +withdrawl($amount)
+}
+
+class SavingAccount extends BankAccount {
+    -interestRate
+    +__construct($balance, $interestRate)
+    +setInterestRate($interestRate)
+    +addInterest()
+}
+
+'class Vehicle {
 '     move()
 ' }
 ' class Car extends Vehicle
