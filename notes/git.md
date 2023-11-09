@@ -16,13 +16,13 @@
 ## Configure username and email
 
 ```bash
-git config --global user.name "Peter Ng"
-git config --global user.email "ngy@vaniercollege.qc.ca"
+git config --global user.name "Your Name"
+git config --global user.email "name@email.domain"
 ```
 
 ## Checkout branches
 
-To list all existing branches on your local repository:
+To list all existing branches on **your local repository**:
 
 ```bash
 git branch

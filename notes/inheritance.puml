@@ -1,0 +1,34 @@
+@startuml
+scale 3
+class ClassName {
+    -private
+    #protected
+    +public
+    -privateMethod()
+    #protectedMethod()
+    +publicMethod()
+}
+class Parent {
+    age
+    talk()
+}
+class Child extends Parent {
+    cry()
+}
+class BankAccount {
+    balance
+    deposit()
+    withdrawl()
+}
+class SavingsAccount extends BankAccount
+class CheckingAccount extends BankAccount
+' class Vehicle {
+'     move()
+' }
+' class Car extends Vehicle
+' class Bike extends Vehicle
+' class Boat extends Vehicle
+' class Bus extends Vehicle
+' class Train extends Vehicle
+' class Plane extends Vehicle
+@enduml
