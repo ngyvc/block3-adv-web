@@ -22,6 +22,12 @@ git config --global user.email "name@email.domain"
 
 ## Checkout branches
 
+Check git status
+
+```
+git status
+```
+
 To list all existing branches on **your local repository**:
 
 ```bash
@@ -31,7 +37,7 @@ git branch
 To checkout an existing branch:
 
 ```bash
-git checkout -b branch-name
+git checkout branch-name
 ```
 
 To create a branch and immediately checkout:
