@@ -1,5 +1,13 @@
 # Inheritance
 
+Note:
+
+```
++public
+-private
+#protected
+```
+
 1. Write a php class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
 
 2. Write a php class called Vehicle with a method called drive(). Create a subclass called Car that overrides the drive() method to print "Repairing a car".

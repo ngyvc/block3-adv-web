@@ -8,7 +8,6 @@ Block 3 - Advanced Web Programming Course Notes
 
 [git setup and commands](notes/git.md)
 
-
 ## External Links
 
 [PHP Tutorial](https://www.phptutorial.net/)
@@ -18,3 +17,5 @@ Block 3 - Advanced Web Programming Course Notes
 [Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
 
 [Description of the database normalization basics](https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
+
+[PlantUML Reference for object diagram](https://plantuml.com/object-diagram)
