@@ -13,5 +13,29 @@
 - [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [Sourcetree](https://www.sourcetreeapp.com/)
 
-`git config --global user.name "Peter Ng"`
-`git config --global user.email "ngy@vaniercollege.qc.ca"`
+## Configure username and email
+
+```bash
+git config --global user.name "Peter Ng"
+git config --global user.email "ngy@vaniercollege.qc.ca"
+```
+
+## Checkout branches
+
+To list all existing branches on your local repository:
+
+```bash
+git branch
+```
+
+To checkout an existing branch:
+
+```bash
+git checkout -b branch-name
+```
+
+To create a branch and immediately checkout:
+
+```bash
+git checkout -b branch-name
+```
