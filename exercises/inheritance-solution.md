@@ -5,7 +5,7 @@
 php Inheritance: Exercise-1 with Solution
 Write a php program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
 
-This exercise shows how inheritance works in php programming language. Inheritance allows you to create new classes based on existing classes, inheriting their attributes and behaviors. In this case, the 'Cat' class is a more specific implementation of the 'Animal' class, adding quarrel behavior.
+$This->exercise shows how inheritance works in php programming language. Inheritance allows you to create new classes based on existing classes, inheriting their attributes and behaviors. In $this->case, the 'Cat' class is a more specific implementation of the 'Animal' class, adding quarrel behavior.
 
 ### Sample Solution:
 
@@ -47,14 +47,14 @@ The cat quarrels.
 
 **Explanation:**
 
-The above exercise demonstrates php programming inheritance. In this program, we create a base class called 'Animal' with a method named makeSound(). Then, you will create a subclass of 'Animal' called 'Cat' which inherits from 'Animal'. The 'Cat' class will override the makeSound() method and change it to make a quarrel sound.
+The above exercise demonstrates php programming inheritance. In $this->program, we create a base class called 'Animal' with a method named makeSound(). Then, you will create a subclass of 'Animal' called 'Cat' which inherits from 'Animal'. The 'Cat' class will override the makeSound() method and change it to make a quarrel sound.
 
 ## Exercise 2
 
 php Inheritance: Exercise-2 with Solution
 Write a php program to create a class called Vehicle with a method called drive(). Create a subclass called Car that overrides the drive() method to print "Repairing a car".
 
-This program creates a class called 'Vehicle' with a method called drive() and a subclass called Car that overrides the drive() method to print "Repairing a car".
+$This->program creates a class called 'Vehicle' with a method called drive() and a subclass called Car that overrides the drive() method to print "Repairing a car".
 
 ### Sample Solution:
 
@@ -98,7 +98,7 @@ Repairing a car
 
 **Explanation:**
 
-In this program, we first define a parent class called Vehicle with a method called drive() which simply prints " Repairing a vehicle" to the console.
+In $this->program, we first define a parent class called Vehicle with a method called drive() which simply prints " Repairing a vehicle" to the console.
 
 Then, we create a subclass called Car that extends Vehicle and overrides the drive() method to print " Repairing a car" instead.
 
@@ -126,16 +126,16 @@ class Shape {
 
 ```php
 class Rectangle extends Shape {
-    private double length;
-    private double width;
+    private $length;
+    private $width;
 
-    public __construc(double length, double width) {
-        this.length = length;
-        this.width = width;
+    public function __construct($length, $width) {
+        $this->length = $length;
+        $this->width = $width;
     }
 
-    public double getArea() {
-        return length * width;
+    public function getArea() {
+        return $this->length * $this->width;
     }
 }
 ```
@@ -143,9 +143,9 @@ class Rectangle extends Shape {
 **Use the classes**
 
 ```php
-Rectangle rectangle = new Rectangle(3.0, 10.0);
-double area = rectangle.getArea();
-echo "The area of the rectangle is: " + area;
+$rectangle = new Rectangle(3.0, 10.0);
+$area = $rectangle->getArea();
+echo "The area of the rectangle is: " . $area;
 ```
 
 ### Sample Output:
@@ -156,7 +156,7 @@ The area of the rectangle is: 30.0
 
 **Explanation:**
 
-In the above exercise, the Shape class has a single method called getArea() that returns a double value. The Rectangle class is a subclass of Shape and overrides the getArea() method to calculate the area of a rectangle using the formula length x width. The Rectangle class constructor sets length and width values.
+In the above exercise, the Shape class has a single method called getArea() that returns a $value. The Rectangle class is a subclass of Shape and overrides the getArea() method to calculate the area of a rectangle using the formula length x width. The Rectangle class constructor sets length and width values.
 
 Finally in the main() method we create an instance of the Rectangle class and call its getArea() method to get the rectangle's area.
 
@@ -172,18 +172,18 @@ Write a php program to create a class called Employee with methods called work()
 
 ```php
 class Employee {
-    private int salary;
+    private $salary;
 
-    public Employee(int salary) {
-        this.salary = salary;
+    public function __construct($salary) {
+        $this->salary = $salary;
     }
 
     public function work() {
         echo "working as an employee!";
     }
 
-    public int getSalary() {
-        return salary;
+    public function getSalary() {
+        return $this->salary;
     }
 }
 ```
@@ -193,16 +193,16 @@ class Employee {
 
 ```php
 class HRManager extends Employee {
-    public __construc(int salary) {
-        super(salary);
+    public function __construct($salary) {
+        parent::__construct($salary);
     }
 
     public function work() {
-        echo "\nManaging employees";
+        echo "Managing employees";
     }
 
     public function addEmployee() {
-        echo "\nAdding new employee!";
+        echo "Adding new employee!";
     }
 }
 ```
@@ -210,15 +210,15 @@ class HRManager extends Employee {
 **Use the classes**
 
 ```php
-Employee emp = new Employee(40000);
-HRManager mgr = new HRManager(70000);
+$emp = new Employee(40000);
+$mgr = new HRManager(70000);
 
-emp.work();
-echo "Employee salary: " + emp.getSalary();
+$emp->work();
+echo "Employee salary: " . $emp->getSalary();
 
-mgr.work();
-echo "Manager salary: " + mgr.getSalary();
-mgr.addEmployee();
+$mgr->work();
+echo "Manager salary: " . $mgr->getSalary();
+$mgr->addEmployee();
 ```
 
 ### Sample Output:
@@ -249,28 +249,28 @@ Write a php program to create a class known as "BankAccount" with methods called
 
 ```php
 class BankAccount {
-    private String accountNumber;
-    private double balance;
+    private $accountNumber;
+    private $balance;
 
-    public __construc(String accountNumber, double balance) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
+    public function __construct($accountNumber, $balance) {
+        $this->accountNumber = $accountNumber;
+        $this->balance = $balance;
     }
 
-    public function deposit(double amount) {
-        balance += amount;
+    public function deposit($amount) {
+        $this->balance += $amount;
     }
 
-    public function withdraw(double amount) {
-        if (balance >= amount) {
-            balance -= amount;
+    public function withdraw($amount) {
+        if ($this->balance >= $amount) {
+            $this->balance -= $amount;
         } else {
             echo "Insufficient balance";
         }
     }
 
-    public double getBalance() {
-        return balance;
+    public function getBalance() {
+        return $this->balance;
     }
 }
 ```
@@ -280,15 +280,15 @@ class BankAccount {
 
 ```php
 class SavingsAccount extends BankAccount {
-    public __construc(String accountNumber, double balance) {
-        super(accountNumber, balance);
+    public function __construct($accountNumber, $balance) {
+        parent::__construct($accountNumber, $balance);
     }
 
-    public function withdraw(double amount) {
-        if (getBalance() - amount < 100) {
+    public function withdraw($amount) {
+        if ($this->getBalance() - $amount < 100) {
             echo "Minimum balance of $100 required!";
         } else {
-            super.withdraw(amount);
+            parent::withdraw($amount);
         }
     }
 }
@@ -299,35 +299,34 @@ class SavingsAccount extends BankAccount {
 ```php
 echo "Create a Bank Account object (A/c No. BA1234) with initial balance of $500:";
 //Create a BankAccount object (A/c No. "BA1234") with initial balance of $500
-BankAccount BA1234 = new BankAccount("BA1234", 500);
+$BA1234 = new BankAccount("BA1234", 500);
 
 // Deposit $1000 into account BA1234
 echo "Deposit $1000 into account BA1234:";
-BA1234.deposit(1000);
-echo "New balance after depositing $1000: $" + BA1234.getBalance();
+$BA1234->deposit(1000);
+echo "New balance after depositing $1000: $" . $BA1234->getBalance();
 
 // Withdraw $600 from account BA1234
 echo "Withdraw $600 from account BA1234:";
-BA1234.withdraw(600);
-echo "New balance after withdrawing $600: $" + BA1234.getBalance();
+$BA1234->withdraw(600);
+echo "New balance after withdrawing $600: $" . $BA1234->getBalance();
 
 // Create a SavingsAccount object (A/c No. "SA1234") with initial balance of $450
 echo "\nCreate a SavingsAccount object (A/c No. SA1234) with initial balance of $450:";
-SavingsAccount SA1234 = new SavingsAccount("SA1234",450);
+$SA1234 = new SavingsAccount("SA1234",450);
 
 // Withdraw $300 from SA1234
-SA1234.withdraw(300);
-echo "Balance after trying to withdraw $300: $" + SA1234.getBalance();
-
+$SA1234->withdraw(300);
+echo "Balance after trying to withdraw $300: $" . $SA1234->getBalance();
 
 // Create a SavingsAccount object (A/c No. "SA1000") with initial balance of $300
 echo "\nCreate a SavingsAccount object (A/c No. SA1000) with initial balance of $300:";
-SavingsAccount SA1000 = new SavingsAccount("SA1000",300);
+$SA1000 = new SavingsAccount("SA1000",300);
 
 // Withdraw $250 from SA1000 (balance falls below $100)
 echo "Try to withdraw $250 from SA1000!";
-SA1000.withdraw(250);
-echo "Balance after trying to withdraw $250: $" + SA1000.getBalance();
+$SA1000->withdraw(250);
+echo "Balance after trying to withdraw $250: $" . $SA1000->getBalance();
 ```
 
 ### Sample Output:
@@ -352,7 +351,7 @@ Balance after trying to withdraw $250: $300.0
 
 The BankAccount class has a constructor that takes account number and balance as arguments. It also has methods to deposit and withdraw money, and to check the account balance.
 
-The SavingsAccount class is a subclass of BankAccount and overrides the withdraw() method. It checks if the account balance falls below one hundred before allowing a withdrawal. The method prints an error message if the balance is below one hundred. If the balance is greater than or equal to one hundred, the method calls the withdraw() method of the superclass to withdraw.
+The SavingsAccount class is a subclass of BankAccount and overrides the withdraw() method. It checks if the account balance falls below one hundred before allowing a withdrawal. The method prints an error message if the balance is below one hundred. If the balance is greater than or equal to one hundred, the method calls the withdraw() method of the parent::\_\_constructclass to withdraw.
 
 In Main() method -
 
@@ -386,7 +385,7 @@ class Animal {
 ```php
 class Cheetah extends Animal {
     public function move() {
-        echo "This cheetah is running!";
+        echo "Cheetah is running!";
     }
 }
 ```
@@ -394,24 +393,24 @@ class Cheetah extends Animal {
 **Use the classes**
 
 ```php
-Animal animal = new Animal();
-animal.move();
-Cheetah cheetah = new Cheetah();
-cheetah.move();
+$animal = new Animal();
+$animal->move();
+$cheetah = new Cheetah();
+$cheetah->move();
 ```
 
 ### Sample Output:
 
 ```
 Animal moves
-This cheetah is running!
+$This->cheetah is running!
 ```
 
 **Explanation:**
 
-In the above exercise, the Animal class has a single method called move(). This method simply prints a message to the console saying the animal is moving. The Cheetah class extends the Animal class and overrides the move() method to print a message that Cheetah is running.
+In the above exercise, the Animal class has a single method called move(). $This->method simply prints a message to the console saying the animal is moving. The Cheetah class extends the Animal class and overrides the move() method to print a message that Cheetah is running.
 
-In the Main class, we create an instance of the "Animal" class and call its move() method. This prints the "This animal is moving" message to the console. We also create an instance of the "Cheetah" class and call its move() method. This prints the "This cheetah is running" message to the console.
+In the Main class, we create an instance of the "Animal" class and call its move() method. $This->prints the "$This->animal is moving" message to the console. We also create an instance of the "Cheetah" class and call its move() method. $This->prints the "$This->cheetah is running" message to the console.
 
 ## Exercise 7
 
@@ -425,20 +424,20 @@ Write a php program to create a class known as Person with methods called getFir
 // Parent class Person
 
 class Person {
-    private String firstName;
-    private String lastName;
+    private $firstName;
+    private $lastName;
 
-    public __construc(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public function __construct($firstName, $lastName) {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public function getFirstName() {
+        return $this->firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public function getLastName() {
+        return $this->lastName;
     }
 }
 ```
@@ -448,21 +447,21 @@ class Person {
 
 ```php
 class Employee extends Person {
-    private int employeeId;
-    private String jobTitle;
+    private $employeeId;
+    private $jobTitle;
 
-    public __construc(String firstName, String lastName, int employeeId, String jobTitle) {
-        super(firstName, lastName);
-        this.employeeId = employeeId;
-        this.jobTitle = jobTitle;
+    public function __construct($firstName, $lastName, $employeeId, $jobTitle) {
+        parent::__construct($firstName, $lastName);
+        $this->employeeId = $employeeId;
+        $this->jobTitle = $jobTitle;
     }
 
-    public int getEmployeeId() {
-        return employeeId;
+    public function getEmployeeId() {
+        return $this->employeeId;
     }
 
-    public String getLastName() {
-        return super.getLastName() + ", " + jobTitle;
+    public function getLastName() {
+        return parent::getLastName() . ", " . $this->jobTitle;
     }
 }
 ```
@@ -470,10 +469,10 @@ class Employee extends Person {
 **Use the classes**
 
 ```php
-Employee employee1 = new Employee("Kortney", "Rosalee", 4451, "HR Manager");
-echo employee1.getFirstName() + " " + employee1.getLastName() + " (" + employee1.getEmployeeId() + ")";
-Employee employee2 = new Employee("Junior", "Philipa", 4452, "Software Manager");
-echo employee2.getFirstName() + " " + employee2.getLastName() + " (" + employee2.getEmployeeId() + ")";
+$employee1 = new Employee("Kortney", "Rosalee", 4451, "HR Manager");
+echo $employee1->getFirstName() . " " . $employee1->getLastName() . " (" . $employee1->getEmployeeId() . ")";
+$employee2 = new Employee("Junior", "Philipa", 4452, "Software Manager");
+echo $employee2->getFirstName() . " " , $employee2->getLastName() . " (" . $employee2->getEmployeeId() . ")";
 ```
 
 ### Sample Output:
@@ -507,11 +506,11 @@ Write a php program to create a class called Shape with methods called getPerime
 
 ```php
 class Shape {
-    public double getPerimeter() {
+    public function getPerimeter() {
         return 0.0;
     }
 
-    public double getArea() {
+    public function getArea() {
         return 0.0;
     }
 }
@@ -522,18 +521,18 @@ class Shape {
 
 ```php
 class Circle extends Shape {
-    private double radius;
+    private $radius;
 
-    public __construc(double radius) {
-        this.radius = radius;
+    public function __construct($radius) {
+        $this->radius = $radius;
     }
 
-    public double getPerimeter() {
-        return 2 * Math.PI * radius;
+    public function getPerimeter() {
+        return 2 * pi() * $this->radius;
     }
 
-    public double getArea() {
-        return Math.PI * radius * radius;
+    public function getArea() {
+        return pi() * $this->radius * $this->radius;
     }
 }
 ```
@@ -541,16 +540,16 @@ class Circle extends Shape {
 **Use the classes**
 
 ```php
-double r = 8.0;
-Circle c1 = new Circle(r);
-echo "Radius of the circle="+r;
-echo "Perimeter: " + c1.getPerimeter();
-echo "Area: " + c1.getArea();
-r = 3.2;
-Circle c2 = new Circle(r);
-echo "\nRadius of the circle="+r;
-echo "Perimeter: " + c2.getPerimeter();
-echo "Area: " + c2.getArea();
+$r = 8.0;
+$c1 = new Circle($r);
+echo "Radius of the circle=" . $r;
+echo "Perimeter: " . $c1->getPerimeter();
+echo "Area: " . $c1->getArea();
+$r2 = 3.2;
+$c2 = new Circle($r);
+echo "\nRadius of the circle=" . $r2;
+echo "Perimeter: " . $c2->getPerimeter();
+echo "Area: " . $c2->getArea();
 ```
 
 ### Sample Output:
@@ -572,7 +571,7 @@ The Circle class has a private radius field that takes a radius argument to init
 
 In the Main class -
 
-The given code creates two Circle objects, c1 and c2, and calculates their perimeter and area using the getPerimeter() and getArea() methods. The radius of each circle is first set using a double variable r. The output displays the radius, perimeter, and area of each circle.
+The given code creates two Circle objects, c1 and c2, and calculates their perimeter and area using the getPerimeter() and getArea() methods. The radius of each circle is first set using a $variable r. The output displays the radius, perimeter, and area of each circle.
 
 ## Exercise 9
 
@@ -585,81 +584,81 @@ Write a php program to create a vehicle class hierarchy. The base class should b
 // Parent class Vehicle
 
 ```php
-public abstract class Vehicle {
-    private String make;
-    private String model;
-    private int year;
-    private String fuelType;
-    private double fuelEfficiency;
+abstract class Vehicle {
+    private $make;
+    private $model;
+    private $year;
+    private $fuelType;
+    private $fuelEfficiency;
 
-    public __construc(String make, String model, int year, String fuelType, double fuelEfficiency) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.fuelType = fuelType;
-        this.fuelEfficiency = fuelEfficiency;
+    public function __construct($make, $model, $year, $fuelType, $fuelEfficiency) {
+        $this->make = $make;
+        $this->model = $model;
+        $this->year = $year;
+        $this->fuelType = $fuelType;
+        $this->fuelEfficiency = $fuelEfficiency;
     }
 
-    public String getMake() {
-        return make;
+    public function getMake() {
+        return $this->make;
     }
 
-    public String getModel() {
-        return model;
+    public function getModel() {
+        return $this->model;
     }
 
-    public int getYear() {
-        return year;
+    public function getYear() {
+        return $this->year;
     }
 
-    public String getFuelType() {
-        return fuelType;
+    public function getFuelType() {
+        return $this->fuelType;
     }
 
-    public double getFuelEfficiency() {
-        return fuelEfficiency;
+    public function getFuelEfficiency() {
+        return $this->fuelEfficiency;
     }
 
-    public abstract double calculateFuelEfficiency();
+    abstract function calculateFuelEfficiency();
 
-    public abstract double calculateDistanceTraveled();
+    abstract function calculateDistanceTraveled();
 
-    public abstract double getMaxSpeed();
+    abstract function getMaxSpeed();
 }
 ```
 
 **Explanation:**
 
-This is an abstract class that serves as the parent class for the other vehicle classes. It contains five private instance variables (make, model, year, fuelType, and fuelEfficiency) and six public methods (a constructor, five getters for the instance variables, and three abstract methods). The abstract methods are meant to be overridden by child classes with specific implementations.
+$This->is an abstract class that serves as the parent class for the other vehicle classes. It contains five private instance variables (make, model, year, fuelType, and fuelEfficiency) and six public methods (a constructor, five getters for the instance variables, and three abstract methods). The abstract methods are meant to be overridden by child classes with specific implementations.
 
 // Truck.php
 // Child class Truck
 
 ```php
 class Truck extends Vehicle {
-    private double cargoCapacity;
+    private $cargoCapacity;
 
-    public __construc(String make, String model, int year, String fuelType, double fuelEfficiency, double cargoCapacity) {
-        super(make, model, year, fuelType, fuelEfficiency);
+    public function __construct($make, $model, $year, $fuelType, $fuelEfficiency, $cargoCapacity) {
+        parent::__construct($make, $model, $year, $fuelType, $fuelEfficiency);
 		//Truck("Ford", "F-150", 2020, "GASOLINE", 8.112);
-       this.cargoCapacity = cargoCapacity;
+       $this->cargoCapacity = $cargoCapacity;
     }
 
-    public double getCargoCapacity() {
-        return cargoCapacity;
+    public function getCargoCapacity() {
+        return $cargoCapacity;
     }
 
-    public double calculateFuelEfficiency() {
+    public function calculateFuelEfficiency() {
         // implementation for fuel efficiency calculation for trucks
-        return getFuelEfficiency()*(1.0 / (1.0 + (getCargoCapacity() / 1000.0)));
+        return $this->getFuelEfficiency()*(1.0 / (1.0 + ($this->getCargoCapacity() / 1000.0)));
     }
 
-    public double calculateDistanceTraveled() {
+    public function calculateDistanceTraveled() {
         // implementation for distance traveled calculation for trucks
-        return calculateFuelEfficiency() * getFuelEfficiency();
+        return $this->calculateFuelEfficiency() * $this->getFuelEfficiency();
     }
 
-    public double getMaxSpeed() {
+    public function getMaxSpeed() {
         // implementation for maximum speed calculation for trucks
         return 80.0;
     }
@@ -675,25 +674,25 @@ The above class is a child class of Vehicle and extends the Vehicle class. It ha
 
 ```php
 class Car extends Vehicle {
-    private int numSeats;
+    private $numSeats;
 
-    public __construc(String make, String model, int year, String fuelType, double fuelEfficiency, int numSeats) {
-        super(make, model, year, fuelType, fuelEfficiency);
-        this.numSeats = numSeats;
+    public function __construct($make, $model, $year, $fuelType, $fuelEfficiency, $numSeats) {
+        parent::__construct($make, $model, $year, $fuelType, $fuelEfficiency);
+        $this->numSeats = $numSeats;
     }
-    public int getNumSeats() {
-        return numSeats;
+    public function getNumSeats() {
+        return $this->numSeats;
     }
-    public double calculateFuelEfficiency() {
+    public function calculateFuelEfficiency() {
         // implementation for fuel efficiency calculation for cars
-        return getFuelEfficiency() * (1.0 / (1.0 + (getNumSeats() / 5.0)));
+        return $this->getFuelEfficiency() * (1.0 / (1.0 + ($this->getNumSeats() / 5.0)));
     }
-    public double calculateDistanceTraveled() {
+    public function calculateDistanceTraveled() {
         // implementation for distance traveled calculation for cars
-        return calculateFuelEfficiency() * getFuelEfficiency();
+        return $this->calculateFuelEfficiency() * $this->getFuelEfficiency();
     }
 
-    public double getMaxSpeed() {
+    public function getMaxSpeed() {
         // implementation for maximum speed calculation for cars
         return 120.0;
     }
@@ -709,28 +708,28 @@ The above class is another child class of Vehicle and extends the Vehicle class.
 
 ```php
 class Motorcycle extends Vehicle {
-    private double engineDisplacement;
+    private $engineDisplacement;
 
-    public __construc(String make, String model, int year, String fuelType, double fuelEfficiency) {
-        super(make, model, year, fuelType, fuelEfficiency);
-      //  this.engineDisplacement = engineDisplacement;
+    public function __construct($make, $model, int year, $fuelType, $fuelEfficiency) {
+        parent::__construct(make, model, year, fuelType, fuelEfficiency);
+      //  $this->engineDisplacement = engineDisplacement;
     }
 
-    public double getEngineDisplacement() {
+    public function getEngineDisplacement() {
         return engineDisplacement;
     }
 
-    public double calculateFuelEfficiency() {
+    public function calculateFuelEfficiency() {
         // implementation for fuel efficiency calculation for motorcycles
         return getFuelEfficiency() * (1.0 / (1.0 + (getEngineDisplacement() / 1000.0)));
     }
 
-      public double calculateDistanceTraveled() {
+      public function calculateDistanceTraveled() {
         // implementation for distance traveled calculation for cars
         return calculateFuelEfficiency() * getFuelEfficiency();
     }
 
-    public double getMaxSpeed() {
+    public function getMaxSpeed() {
         // implementation for maximum speed calculation for cars
         return 80.0;
     }
@@ -739,31 +738,31 @@ class Motorcycle extends Vehicle {
 
 **Explanation:**
 
-This is also a child class of Vehicle and extends the Vehicle class. It has an additional instance variable, engineDisplacement. The class has a constructor that accepts all the necessary parameters. The class overrides the three abstract methods of the parent class and provides specific implementations of the methods.
+$This->is also a child class of Vehicle and extends the Vehicle class. It has an additional instance variable, engineDisplacement. The class has a constructor that accepts all the necessary parameters. The class overrides the three abstract methods of the parent class and provides specific implementations of the methods.
 
 **Use the classes**
 
 ```php
 // Create instances of each vehicle type
-Truck truck = new Truck("Tatra", "Tatra 810 4x4", 2020, "GASOLINE", 8.112, 4.5);
-Car car = new Car("Volkswagen", "Virtus", 2019, "HYBRID", 6.123, 8);
-Motorcycle motorcycle = new Motorcycle("Massimo Motor", "Warrior200", 2018, "GASOLINE", 2.1);
+$truck = new Truck("Tatra", "Tatra 810 4x4", 2020, "GASOLINE", 8.112, 4.5);
+$car = new Car("Volkswagen", "Virtus", 2019, "HYBRID", 6.123, 8);
+$motorcycle = new Motorcycle("Massimo Motor", "Warrior200", 2018, "GASOLINE", 2.1);
 
 // Print the vehicle details and calculations
-echo "Truck Model: " + truck.getModel();
-echo "Fuel Efficiency: " + truck.calculateFuelEfficiency() + " mpg";
-echo "Distance Traveled: " + truck.calculateDistanceTraveled() + " miles";
-echo "Max Speed: " + truck.getMaxSpeed() + " mph\n";
+echo "Truck Model: " . $truck->getModel();
+echo "Fuel Efficiency: " . $truck->calculateFuelEfficiency() . " mpg";
+echo "Distance Traveled: " . $truck->calculateDistanceTraveled() . " miles";
+echo "Max Speed: " . $truck->getMaxSpeed() . " mph\n";
 
-echo "Car Model: " + car.getModel();
-echo "Fuel Efficiency: " + car.calculateFuelEfficiency() + " mpg";
-echo "Distance Traveled: " + car.calculateDistanceTraveled() + " miles";
-echo "Max Speed: " + car.getMaxSpeed() + " mph\n";
+echo "Car Model: " . $car->getModel();
+echo "Fuel Efficiency: " . $car->calculateFuelEfficiency() . " mpg";
+echo "Distance Traveled: " . $car->calculateDistanceTraveled() . " miles";
+echo "Max Speed: " . $car->getMaxSpeed() . " mph\n";
 
-echo "Motorcycle Model: " + motorcycle.getModel();
-echo "Fuel Efficiency: " + motorcycle.calculateFuelEfficiency() + " mpg";
-echo "Distance Traveled: " + motorcycle.calculateDistanceTraveled() + " miles";
-echo "Max Speed: " + motorcycle.getMaxSpeed() + " mph";
+echo "Motorcycle Model: " . $motorcycle->getModel();
+echo "Fuel Efficiency: " . $motorcycle->calculateFuelEfficiency() . " mpg";
+echo "Distance Traveled: " . $motorcycle->calculateDistanceTraveled() . " miles";
+echo "Max Speed: " . $motorcycle->getMaxSpeed() . " mph";
 ```
 
 **Explanation:**
@@ -799,40 +798,40 @@ Write a php program that creates a class hierarchy for employees of a company. T
 
 ```php
 class Employee {
-private String name;
-private String address;
-private double salary;
-private String jobTitle;
+private $name;
+private $address;
+private $salary;
+private $jobTitle;
 
-    public __construc(String name, String address, double salary, String jobTitle) {
-        this.name = name;
-        this.address = address;
-        this.salary = salary;
-        this.jobTitle = jobTitle;
+    public function __construct($name, $address, $salary, $jobTitle) {
+        $this->name = $name;
+        $this->address = $address;
+        $this->salary = $salary;
+        $this->jobTitle = $jobTitle;
     }
 
-    public String getName() {
-        return name;
+    public function getName() {
+        return $this->name;
     }
 
-    public String getAddress() {
-        return address;
+    public function getAddress() {
+        return $this->address;
     }
 
-    public double getSalary() {
-        return salary;
+    public function getSalary() {
+        return $this->salary;
     }
 
-    public String getJobTitle() {
-        return jobTitle;
+    public function getJobTitle() {
+        return $this->jobTitle;
     }
 
-    public double calculateBonus() {
+    public function calculateBonus() {
         // Default implementation for bonus calculation
         return 0.0;
     }
 
-    public String generatePerformanceReport() {
+    public function generatePerformanceReport() {
         // Default implementation for performance report
         return "No performance report available.";
     }
@@ -842,43 +841,43 @@ private String jobTitle;
 
 **Explanation:**
 
-Employee class: This class represents a generic employee with private instance variables 'name', 'address', 'salary', and 'jobTitle'. It also provides getter methods to access these private variables.
+Employee class: $This->class represents a generic employee with private instance variables 'name', 'address', 'salary', and 'jobTitle'. It also provides getter methods to access these private variables.
 getName(): Returns the employee's name.
 getAddress(): Returns the employee's address.
 getSalary(): Returns the employee's salary.
 getJobTitle(): Returns the employee's job title.
-calculateBonus(): This method is used to calculate the bonus for an employee. In the base class, it provides a default implementation that returns 0.0. Subclasses can override this method to provide custom bonus calculation logic.
-generatePerformanceReport(): This method generates a performance report for an employee. Similar to the bonus calculation, it provides a default implementation that returns "No performance report available." Subclasses can override this method to provide custom performance report generation logic.
-This class is designed to be extended by subclasses like "Manager", "Developer", and "Programmer", which can provide their own implementations of bonus calculation and performance report generation as per their specific roles and responsibilities.
+calculateBonus(): $This->method is used to calculate the bonus for an employee. In the base class, it provides a default implementation that returns 0.0. Subclasses can override $this->method to provide custom bonus calculation logic.
+generatePerformanceReport(): $This->method generates a performance report for an employee. Similar to the bonus calculation, it provides a default implementation that returns "No performance report available." Subclasses can override $this->method to provide custom performance report generation logic.
+$This->class is designed to be extended by subclasses like "Manager", "Developer", and "Programmer", which can provide their own implementations of bonus calculation and performance report generation as per their specific roles and responsibilities.
 
 //Manager.php
 
 ```php
 class Manager extends Employee {
-private int numberOfSubordinates;
+    private $numberOfSubordinates;
 
-    public __construc(String name, String address, double salary, String jobTitle, int numberOfSubordinates) {
-        super(name, address, salary, jobTitle);
-        this.numberOfSubordinates = numberOfSubordinates;
+    public function __construct($name, $address, $salary, $jobTitle, $numberOfSubordinates) {
+        parent::__construct($name, $address, $salary, $jobTitle);
+        $this->numberOfSubordinates = $numberOfSubordinates;
     }
 
-    public int getNumberOfSubordinates() {
-        return numberOfSubordinates;
+    public function getNumberOfSubordinates() {
+        return $this->numberOfSubordinates;
     }
 
-    public double calculateBonus() {
+    public function calculateBonus() {
         // Custom implementation for bonus calculation for managers
-        return getSalary() * 0.15;
+        return $this->getSalary() * 0.15;
     }
 
-    public String generatePerformanceReport() {
+    public function generatePerformanceReport() {
         // Custom implementation for performance report for managers
-        return "Performance report for Manager " + getName() + ": Excellent";
+        return "Performance report for Manager " . $this->getName() . ": Excellent";
     }
 
     public function manageProject() {
         // Custom method for managing projects
-        echo "Manager " + getName() + " is managing a project.";
+        echo "Manager " . $this->getName() . " is managing a project.";
     }
 
 }
@@ -886,42 +885,42 @@ private int numberOfSubordinates;
 
 **Explanation:**
 
-extends Employee: This line indicates that the "Manager" class inherits from the "Employee" class. It means that a Manager is a specialized type of Employee and inherits all the attributes and methods of the Employee class.
-private int numberOfSubordinates: This instance variable represents the number of subordinates managed by the manager. It is specific to the "Manager" class and not present in the base "Employee" class.
-public Manager(String name, String address, double salary, String jobTitle, int numberOfSubordinates): This is the constructor for the "Manager" class. It takes parameters for 'name', 'address', 'salary', 'jobTitle', and numberOfSubordinates, which are used to initialize the attributes inherited from the "Employee" class as well as the numberOfSubordinates specific to managers. The super(...) keyword is used to call the constructor of the superclass (Employee) to initialize its attributes.
-public int getNumberOfSubordinates(): This method allows you to retrieve the number of subordinates managed by the manager.
-@Override public double calculateBonus(): This method is marked with the @Override annotation, indicating that it is an overridden method from the superclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for managers. In this case, it calculates the bonus as 15% of the manager's salary.
-@Override public String generatePerformanceReport(): Similar to the "calculateBonus()" method, this method is also marked as an override and provides a custom implementation for generating a performance report for managers. It returns a specific performance report message for managers, including the manager's name and an "Excellent" rating.
-public function manageProject(): This is a custom method specific to the "Manager" class. It simulates the action of a manager managing a project by printing a message to the console.
+extends Employee: $This->line indicates that the "Manager" class inherits from the "Employee" class. It means that a Manager is a specialized type of Employee and inherits all the attributes and methods of the Employee class.
+private $numberOfSubordinates: $This->instance variable represents the number of subordinates managed by the manager. It is specific to the "Manager" class and not present in the base "Employee" class.
+public Manager($name, $address, $salary, $jobTitle, int numberOfSubordinates): $This->is the constructor for the "Manager" class. It takes parameters for 'name', 'address', 'salary', 'jobTitle', and numberOfSubordinates, which are used to initialize the attributes inherited from the "Employee" class as well as the numberOfSubordinates specific to managers. The parent::**construct(...) keyword is used to call the constructor of the parent::**constructclass (Employee) to initialize its attributes.
+public int getNumberOfSubordinates(): $This->method allows you to retrieve the number of subordinates managed by the manager.
+@Override public function calculateBonus(): $This->method is marked with the @Override annotation, indicating that it is an overridden method from the parent::\_\_constructclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for managers. In $this->case, it calculates the bonus as 15% of the manager's salary.
+@Override public function generatePerformanceReport(): Similar to the "calculateBonus()" method, $this->method is also marked as an override and provides a custom implementation for generating a performance report for managers. It returns a specific performance report message for managers, including the manager's name and an "Excellent" rating.
+public function manageProject(): $This->is a custom method specific to the "Manager" class. It simulates the action of a manager managing a project by printing a message to the console.
 
 //Developer.php
 
 ```php
 class Developer extends Employee {
-private String programmingLanguage;
+    private $programmingLanguage;
 
-    public __construc(String name, String address, double salary, String jobTitle, String programmingLanguage) {
-        super(name, address, salary, jobTitle);
-        this.programmingLanguage = programmingLanguage;
+    public function __construct($name, $address, $salary, $jobTitle, $programmingLanguage) {
+        parent::__construct($name, $address, $salary, $jobTitle);
+        $this->programmingLanguage = $programmingLanguage;
     }
 
-    public String getProgrammingLanguage() {
-        return programmingLanguage;
+    public function getProgrammingLanguage() {
+        return $this->programmingLanguage;
     }
 
-    public double calculateBonus() {
+    public function calculateBonus() {
         // Custom implementation for bonus calculation for developers
-        return getSalary() * 0.10;
+        return $this->getSalary() * 0.10;
     }
 
-    public String generatePerformanceReport() {
+    public function generatePerformanceReport() {
         // Custom implementation for performance report for developers
-        return "Performance report for Developer " + getName() + ": Good";
+        return "Performance report for Developer " . $this->getName() . ": Good";
     }
 
     public function writeCode() {
         // Custom method for writing code
-        echo "Developer " + getName() + " is writing code in " + programmingLanguage;
+        echo "Developer " . $this->getName() . " is writing code in " . $this->programmingLanguage;
     }
 
 }
@@ -929,35 +928,35 @@ private String programmingLanguage;
 
 **Explanation:**
 
-extends Employee: Similar to the "Manager" class, this line indicates that the Developer class inherits from the "Employee" class. It means that a 'Developer' is a specialized type of 'Employee' and inherits all the attributes and methods of the Employee class.
-private String programmingLanguage: This instance variable represents the programming language that the developer specializes in. It is specific to the "Developer" class and not present in the base "Employee" class.
-public Developer(String name, String address, double salary, String jobTitle, String programmingLanguage): This is the constructor for the "Developer" class. It takes parameters for 'name', 'address', 'salary', 'jobTitle', and programmingLanguage, which are used to initialize the attributes inherited from the "Employee" class as well as the programmingLanguage specific to developers. The super(...) keyword is used to call the constructor of the superclass (Employee) to initialize its attributes.
-public String getProgrammingLanguage(): This method allows you to retrieve the programming language specialization of the developer.
-@Override public double calculateBonus(): This method is marked with the @Override annotation, indicating that it is an overridden method from the superclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for developers. In this case, it calculates the bonus as 10% of the developer's salary.
-@Override public String generatePerformanceReport(): Similar to the "calculateBonus()" method, this method is also marked as an override and provides a custom implementation for generating a performance report for developers. It returns a specific performance report message for developers, including the developer's name and a "Good" rating.
-public function writeCode(): This is a custom method specific to the "Developer" class. It simulates the action of a developer writing code in their specialized programming language by printing a message to the console.
+extends Employee: Similar to the "Manager" class, $this->line indicates that the Developer class inherits from the "Employee" class. It means that a 'Developer' is a specialized type of 'Employee' and inherits all the attributes and methods of the Employee class.
+private $programmingLanguage: $This->instance variable represents the programming language that the developer specializes in. It is specific to the "Developer" class and not present in the base "Employee" class.
+public Developer($name, $address, $salary, $jobTitle, $programmingLanguage): $This->is the constructor for the "Developer" class. It takes parameters for 'name', 'address', 'salary', 'jobTitle', and programmingLanguage, which are used to initialize the attributes inherited from the "Employee" class as well as the programmingLanguage specific to developers. The parent::**construct(...) keyword is used to call the constructor of the parent::**constructclass (Employee) to initialize its attributes.
+public function getProgrammingLanguage(): $This->method allows you to retrieve the programming language specialization of the developer.
+@Override public function calculateBonus(): $This->method is marked with the @Override annotation, indicating that it is an overridden method from the parent::\_\_constructclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for developers. In $this->case, it calculates the bonus as 10% of the developer's salary.
+@Override public function generatePerformanceReport(): Similar to the "calculateBonus()" method, $this->method is also marked as an override and provides a custom implementation for generating a performance report for developers. It returns a specific performance report message for developers, including the developer's name and a "Good" rating.
+public function writeCode(): $This->is a custom method specific to the "Developer" class. It simulates the action of a developer writing code in their specialized programming language by printing a message to the console.
 
 //Programmer.php
 
 ```php
 class Programmer extends Developer {
-    public __construc(String name, String address, double salary, String programmingLanguage) {
-        super(name, address, salary, "Programmer", programmingLanguage);
+    public function __construct($name, $address, $salary, $programmingLanguage) {
+        parent::__construct($name, $address, $salary, "Programmer", $programmingLanguage);
     }
 
-    public double calculateBonus() {
+    public function calculateBonus() {
         // Custom implementation for bonus calculation for programmers
-        return getSalary() * 0.12;
+        return $this->getSalary() * 0.12;
     }
 
-    public String generatePerformanceReport() {
+    public function generatePerformanceReport() {
         // Custom implementation for performance report for programmers
-        return "Performance report for Programmer " + getName() + ": Excellent";
+        return "Performance report for Programmer " . $this->getName() . ": Excellent";
     }
 
     public function debugCode() {
         // Custom method for debugging code
-        echo "Programmer " + getName() + " is debugging code in " + getProgrammingLanguage();
+        echo "Programmer " . $this->getName() . " is debugging code in " . $this->getProgrammingLanguage();
     }
 
 }
@@ -965,29 +964,29 @@ class Programmer extends Developer {
 
 **Explanation:**
 
-extends Developer: This line indicates that the "Programmer" class inherits from the "Developer" class. It means that a 'Programmer' is a specialized type of 'Developer' and inherits all the attributes and methods of the Developer class.
-public Programmer(String name, String address, double salary, String programmingLanguage): This is the constructor for the "Programmer" class. It takes parameters for 'name', 'address', 'salary', and 'programmingLanguage'. It passes these parameters to the constructor of the superclass (Developer) using the super(...) keyword to initialize the attributes inherited from the "Developer" class. The 'jobTitle' parameter is set to "Programmer" to indicate the specific job title for programmers.
-@Override public double calculateBonus(): This method is marked with the @Override annotation, indicating that it is an overridden method from the superclass (Developer). The "calculateBonus()" method provides a custom implementation for bonus calculation for programmers. In this case, it calculates the bonus as 12% of the programmer's salary.
-@Override public String generatePerformanceReport(): Similar to the "calculateBonus()" method, this method is also marked as an override and provides a custom implementation for generating a performance report for programmers. It returns a specific performance report message for programmers, including the programmer's name and an "Excellent" rating.
-public function debugCode(): This is a custom method specific to the "Programmer" class. It simulates the action of a programmer debugging code in their specialized programming language by printing a message to the console.
+extends Developer: $This->line indicates that the "Programmer" class inherits from the "Developer" class. It means that a 'Programmer' is a specialized type of 'Developer' and inherits all the attributes and methods of the Developer class.
+public Programmer($name, $address, $salary, $programmingLanguage): $This->is the constructor for the "Programmer" class. It takes parameters for 'name', 'address', 'salary', and 'programmingLanguage'. It passes these parameters to the constructor of the parent::**constructclass (Developer) using the parent::**construct(...) keyword to initialize the attributes inherited from the "Developer" class. The 'jobTitle' parameter is set to "Programmer" to indicate the specific job title for programmers.
+@Override public function calculateBonus(): $This->method is marked with the @Override annotation, indicating that it is an overridden method from the parent::\_\_constructclass (Developer). The "calculateBonus()" method provides a custom implementation for bonus calculation for programmers. In $this->case, it calculates the bonus as 12% of the programmer's salary.
+@Override public function generatePerformanceReport(): Similar to the "calculateBonus()" method, $this->method is also marked as an override and provides a custom implementation for generating a performance report for programmers. It returns a specific performance report message for programmers, including the programmer's name and an "Excellent" rating.
+public function debugCode(): $This->is a custom method specific to the "Programmer" class. It simulates the action of a programmer debugging code in their specialized programming language by printing a message to the console.
 //Main.php
 
 ```php
-Manager manager = new Manager("Avril Aroldo", "1 ABC St", 80000.0, "Manager", 5);
-Developer developer = new Developer("Iver Dipali", "2 PQR St", 72000.0, "Developer", "php");
-Programmer programmer = new Programmer("Yaron Gabriel", "3 ABC St", 76000.0, "Python");
+$manager = new Manager("Avril Aroldo", "1 ABC St", 80000.0, "Manager", 5);
+$developer = new Developer("Iver Dipali", "2 PQR St", 72000.0, "Developer", "php");
+$programmer = new Programmer("Yaron Gabriel", "3 ABC St", 76000.0, "Python");
 
-echo "Manager's Bonus: $" + manager.calculateBonus();
-echo "Developer's Bonus: $" + developer.calculateBonus();
-echo "Programmer's Bonus: $" + programmer.calculateBonus();
+echo "Manager's Bonus: $" . $manager->calculateBonus();
+echo "Developer's Bonus: $" . $developer->calculateBonus();
+echo "Programmer's Bonus: $" . $programmer->calculateBonus();
 
-echo manager.generatePerformanceReport();
-echo developer.generatePerformanceReport();
-echo programmer.generatePerformanceReport();
+echo $manager->generatePerformanceReport();
+echo $developer->generatePerformanceReport();
+echo $programmer->generatePerformanceReport();
 
-manager.manageProject();
-developer.writeCode();
-programmer.debugCode();
+$manager->manageProject();
+$developer->writeCode();
+$programmer->debugCode();
 ```
 
 **Explanation:**
