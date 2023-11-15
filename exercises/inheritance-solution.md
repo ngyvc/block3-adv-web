@@ -7,9 +7,7 @@ Write a php program to create a class called Animal with a method called makeSou
 
 This exercise shows how inheritance works in php programming language. Inheritance allows you to create new classes based on existing classes, inheriting their attributes and behaviors. In this case, the 'Cat' class is a more specific implementation of the 'Animal' class, adding quarrel behavior.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Animal.php
 
@@ -31,7 +29,7 @@ class Cat extends Animal {
 }
 ```
 
-// Main.php
+**Use the classes**
 
 ```php
 $animal = new Animal();
@@ -40,14 +38,14 @@ $animal->makeSound();
 $cat->makeSound();
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 The animal makes a sound.
 The cat quarrels.
 ```
 
-Explanation:
+**Explanation:**
 
 The above exercise demonstrates php programming inheritance. In this program, we create a base class called 'Animal' with a method named makeSound(). Then, you will create a subclass of 'Animal' called 'Cat' which inherits from 'Animal'. The 'Cat' class will override the makeSound() method and change it to make a quarrel sound.
 
@@ -58,9 +56,7 @@ Write a php program to create a class called Vehicle with a method called drive(
 
 This program creates a class called 'Vehicle' with a method called drive() and a subclass called Car that overrides the drive() method to print "Repairing a car".
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Vehicle.php
 // Parent class Vehicle
@@ -84,8 +80,7 @@ class Car extends Vehicle {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 $vehicle = new Vehicle();
@@ -94,14 +89,14 @@ $vehicle->drive(); // Output: Repairing a vehicle
 $car->drive(); // Output: Repairing a car
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 Repairing a vehicle
 Repairing a car
 ```
 
-Explanation:
+**Explanation:**
 
 In this program, we first define a parent class called Vehicle with a method called drive() which simply prints " Repairing a vehicle" to the console.
 
@@ -114,9 +109,7 @@ In the main() method, we create an instance of both the Vehicle and Car classes,
 php Inheritance: Exercise-3 with Solution
 Write a php program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 ```php
 // Shape.php
@@ -147,8 +140,7 @@ class Rectangle extends Shape {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 Rectangle rectangle = new Rectangle(3.0, 10.0);
@@ -156,13 +148,13 @@ double area = rectangle.getArea();
 echo "The area of the rectangle is: " + area;
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 The area of the rectangle is: 30.0
 ```
 
-Explanation:
+**Explanation:**
 
 In the above exercise, the Shape class has a single method called getArea() that returns a double value. The Rectangle class is a subclass of Shape and overrides the getArea() method to calculate the area of a rectangle using the formula length x width. The Rectangle class constructor sets length and width values.
 
@@ -173,9 +165,7 @@ Finally in the main() method we create an instance of the Rectangle class and ca
 php Inheritance: Exercise-4 with Solution
 Write a php program to create a class called Employee with methods called work() and getSalary(). Create a subclass called HRManager that overrides the work() method and adds a new method called addEmployee().
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Employee.php
 // Parent class Employee
@@ -217,8 +207,7 @@ class HRManager extends Employee {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 Employee emp = new Employee(40000);
@@ -232,7 +221,7 @@ echo "Manager salary: " + mgr.getSalary();
 mgr.addEmployee();
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 working as an employee!
@@ -244,7 +233,7 @@ Manager salary: 70000
 Adding new employee!
 ```
 
-Explanation:
+**Explanation:**
 
 In the above exercise, the Employee class has a work() method that prints a message and a getSalary() method that returns the employee's salary. The HRManager subclass extends the Employee class and overrides the work() method to display a different message. It adds a method addEmployee() that prints a message indicating that a new employee is being added. The Main class creates an instance of Employee and HRManager, calls the work() and getSalary() methods, and also calls the addEmployee() method on the HRManager object.
 
@@ -253,9 +242,7 @@ In the above exercise, the Employee class has a work() method that prints a mess
 php Inheritance: Exercise-5 with Solution
 Write a php program to create a class known as "BankAccount" with methods called deposit() and withdraw(). Create a subclass called SavingsAccount that overrides the withdraw() method to prevent withdrawals if the account balance falls below one hundred.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // BankAccount.php
 // Parent class BankAccount
@@ -307,8 +294,7 @@ class SavingsAccount extends BankAccount {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 echo "Create a Bank Account object (A/c No. BA1234) with initial balance of $500:";
@@ -344,7 +330,7 @@ SA1000.withdraw(250);
 echo "Balance after trying to withdraw $250: $" + SA1000.getBalance();
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 Create a Bank Account object (A/c No. BA1234) with initial balance of $500:
@@ -362,7 +348,7 @@ Minimum balance of $100 required!
 Balance after trying to withdraw $250: $300.0
 ```
 
-Explanation:
+**Explanation:**
 
 The BankAccount class has a constructor that takes account number and balance as arguments. It also has methods to deposit and withdraw money, and to check the account balance.
 
@@ -381,9 +367,7 @@ Finally, the method creates another instance of the SavingsAccount class with an
 php Inheritance: Exercise-6 with Solution
 Write a php program to create a class called Animal with a method named move(). Create a subclass called Cheetah that overrides the move() method to run.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Animal.php
 // Parent class Animal
@@ -407,8 +391,7 @@ class Cheetah extends Animal {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 Animal animal = new Animal();
@@ -417,14 +400,14 @@ Cheetah cheetah = new Cheetah();
 cheetah.move();
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 Animal moves
 This cheetah is running!
 ```
 
-Explanation:
+**Explanation:**
 
 In the above exercise, the Animal class has a single method called move(). This method simply prints a message to the console saying the animal is moving. The Cheetah class extends the Animal class and overrides the move() method to print a message that Cheetah is running.
 
@@ -435,9 +418,7 @@ In the Main class, we create an instance of the "Animal" class and call its move
 php Inheritance: Exercise-7 with Solution
 Write a php program to create a class known as Person with methods called getFirstName() and getLastName(). Create a subclass called Employee that adds a new method named getEmployeeId() and overrides the getLastName() method to include the employee's job title.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 ```php
 // Person.php
@@ -486,8 +467,7 @@ class Employee extends Person {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 Employee employee1 = new Employee("Kortney", "Rosalee", 4451, "HR Manager");
@@ -496,14 +476,14 @@ Employee employee2 = new Employee("Junior", "Philipa", 4452, "Software Manager")
 echo employee2.getFirstName() + " " + employee2.getLastName() + " (" + employee2.getEmployeeId() + ")";
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 Kortney Rosalee, HR Manager (4451)
 Junior Philipa, Software Manager (4452)
 ```
 
-Explanation:
+**Explanation:**
 
 The Person class has two private instance variables, firstName and lastName, and two public methods, getFirstName() and getLastName(), that return the values of these variables.
 
@@ -520,9 +500,7 @@ Similarly, Employee2's getFirstName(), getLastName(), and getEmployeeId() method
 php Inheritance: Exercise-8 with Solution
 Write a php program to create a class called Shape with methods called getPerimeter() and getArea(). Create a subclass called Circle that overrides the getPerimeter() and getArea() methods to calculate the area and perimeter of a circle.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Shape.php
 // Parent class Shape
@@ -560,8 +538,7 @@ class Circle extends Shape {
 }
 ```
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 double r = 8.0;
@@ -576,7 +553,7 @@ echo "Perimeter: " + c2.getPerimeter();
 echo "Area: " + c2.getArea();
 ```
 
-Sample Output:
+### Sample Output:
 
 ```
 Radius of the circle=8.0
@@ -586,7 +563,7 @@ Area: 201.06192982974676
 Radius of the circle=3.2
 Perimeter: 20.106192982974676
 Area: 32.169908772759484
-Explanation:
+**Explanation:**
 ```
 
 In the above exercise, the Shape class is a base class that provides generic methods for calculating the perimeter and area of a shape. The Circle class is a subclass that extends Shape and overrides the getPerimeter() and getArea() methods to implement circle formulas.
@@ -602,9 +579,7 @@ The given code creates two Circle objects, c1 and c2, and calculates their perim
 php Inheritance: Exercise-9 with Solution
 Write a php program to create a vehicle class hierarchy. The base class should be Vehicle, with subclasses Truck, Car and Motorcycle. Each subclass should have properties such as make, model, year, and fuel type. Implement methods for calculating fuel efficiency, distance traveled, and maximum speed.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 // Vehicle.php
 // Parent class Vehicle
@@ -653,7 +628,7 @@ public abstract class Vehicle {
 }
 ```
 
-Explanation:
+**Explanation:**
 
 This is an abstract class that serves as the parent class for the other vehicle classes. It contains five private instance variables (make, model, year, fuelType, and fuelEfficiency) and six public methods (a constructor, five getters for the instance variables, and three abstract methods). The abstract methods are meant to be overridden by child classes with specific implementations.
 
@@ -691,7 +666,7 @@ class Truck extends Vehicle {
 }
 ```
 
-Explanation:
+**Explanation:**
 
 The above class is a child class of Vehicle and extends the Vehicle class. It has an additional instance variable, cargoCapacity. The class has a constructor that accepts all the necessary parameters including cargo capacity. The class overrides the three abstract methods of the parent class and provides specific implementations of the methods.
 
@@ -725,7 +700,7 @@ class Car extends Vehicle {
 }
 ```
 
-Explanation:
+**Explanation:**
 
 The above class is another child class of Vehicle and extends the Vehicle class. It has an additional instance variable, numSeats. The class has a constructor that accepts all the necessary parameters including the number of seats. The class overrides the three abstract methods of the parent class and provides specific implementations of the methods.
 
@@ -762,12 +737,11 @@ class Motorcycle extends Vehicle {
 }
 ```
 
-Explanation:
+**Explanation:**
 
 This is also a child class of Vehicle and extends the Vehicle class. It has an additional instance variable, engineDisplacement. The class has a constructor that accepts all the necessary parameters. The class overrides the three abstract methods of the parent class and provides specific implementations of the methods.
 
-// Main.php
-// Main class
+**Use the classes**
 
 ```php
 // Create instances of each vehicle type
@@ -792,11 +766,11 @@ echo "Distance Traveled: " + motorcycle.calculateDistanceTraveled() + " miles";
 echo "Max Speed: " + motorcycle.getMaxSpeed() + " mph";
 ```
 
-Explanation:
+**Explanation:**
 
 The above class is the main class that contains the main method. It creates instances of each vehicle type, sets their values, and then prints their respective details and calculations such as fuel efficiency, distance traveled, and max speed.
 
-Sample Output:
+### Sample Output:
 
 ```
 Truck Model: Tatra 810 4x4
@@ -819,9 +793,7 @@ Max Speed: 80.0 mph
 
 Write a php program that creates a class hierarchy for employees of a company. The base class should be Employee, with subclasses Manager, Developer, and Programmer. Each subclass should have properties such as name, address, salary, and job title. Implement methods for calculating bonuses, generating performance reports, and managing projects.
 
-Sample Solution:
-
-php Code:
+### Sample Solution:
 
 //Employee.php
 
@@ -868,7 +840,7 @@ private String jobTitle;
 }
 ```
 
-Explanation:
+**Explanation:**
 
 Employee class: This class represents a generic employee with private instance variables 'name', 'address', 'salary', and 'jobTitle'. It also provides getter methods to access these private variables.
 getName(): Returns the employee's name.
@@ -912,7 +884,7 @@ private int numberOfSubordinates;
 }
 ```
 
-Explanation:
+**Explanation:**
 
 extends Employee: This line indicates that the "Manager" class inherits from the "Employee" class. It means that a Manager is a specialized type of Employee and inherits all the attributes and methods of the Employee class.
 private int numberOfSubordinates: This instance variable represents the number of subordinates managed by the manager. It is specific to the "Manager" class and not present in the base "Employee" class.
@@ -921,6 +893,7 @@ public int getNumberOfSubordinates(): This method allows you to retrieve the num
 @Override public double calculateBonus(): This method is marked with the @Override annotation, indicating that it is an overridden method from the superclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for managers. In this case, it calculates the bonus as 15% of the manager's salary.
 @Override public String generatePerformanceReport(): Similar to the "calculateBonus()" method, this method is also marked as an override and provides a custom implementation for generating a performance report for managers. It returns a specific performance report message for managers, including the manager's name and an "Excellent" rating.
 public function manageProject(): This is a custom method specific to the "Manager" class. It simulates the action of a manager managing a project by printing a message to the console.
+
 //Developer.php
 
 ```php
@@ -954,7 +927,7 @@ private String programmingLanguage;
 }
 ```
 
-Explanation:
+**Explanation:**
 
 extends Employee: Similar to the "Manager" class, this line indicates that the Developer class inherits from the "Employee" class. It means that a 'Developer' is a specialized type of 'Employee' and inherits all the attributes and methods of the Employee class.
 private String programmingLanguage: This instance variable represents the programming language that the developer specializes in. It is specific to the "Developer" class and not present in the base "Employee" class.
@@ -963,6 +936,7 @@ public String getProgrammingLanguage(): This method allows you to retrieve the p
 @Override public double calculateBonus(): This method is marked with the @Override annotation, indicating that it is an overridden method from the superclass (Employee). The "calculateBonus()" method provides a custom implementation for bonus calculation for developers. In this case, it calculates the bonus as 10% of the developer's salary.
 @Override public String generatePerformanceReport(): Similar to the "calculateBonus()" method, this method is also marked as an override and provides a custom implementation for generating a performance report for developers. It returns a specific performance report message for developers, including the developer's name and a "Good" rating.
 public function writeCode(): This is a custom method specific to the "Developer" class. It simulates the action of a developer writing code in their specialized programming language by printing a message to the console.
+
 //Programmer.php
 
 ```php
@@ -989,7 +963,7 @@ class Programmer extends Developer {
 }
 ```
 
-Explanation:
+**Explanation:**
 
 extends Developer: This line indicates that the "Programmer" class inherits from the "Developer" class. It means that a 'Programmer' is a specialized type of 'Developer' and inherits all the attributes and methods of the Developer class.
 public Programmer(String name, String address, double salary, String programmingLanguage): This is the constructor for the "Programmer" class. It takes parameters for 'name', 'address', 'salary', and 'programmingLanguage'. It passes these parameters to the constructor of the superclass (Developer) using the super(...) keyword to initialize the attributes inherited from the "Developer" class. The 'jobTitle' parameter is set to "Programmer" to indicate the specific job title for programmers.
@@ -1016,7 +990,7 @@ developer.writeCode();
 programmer.debugCode();
 ```
 
-Explanation:
+**Explanation:**
 
 Creating Employee Objects:
 Three employee objects are created: 'manager', 'developer', and 'programmer', each with their specific attributes such as name, address, salary, and job title.
@@ -1035,7 +1009,8 @@ manager uses the "manageProject()" method to simulate managing a project.
 developer uses the "writeCode()" method to simulate writing code in a specific programming language.
 programmer uses the "debugCode()" method to simulate debugging code in a specific programming language.
 These actions are displayed on the console.
-Sample Output:
+
+### Sample Output:
 
 ```
 Manager's Bonus: $12000.0
