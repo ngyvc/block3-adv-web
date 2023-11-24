@@ -2,7 +2,7 @@
 
 ## Project preparation
 
-For your first project, you will pick from one of the three following subject matter and create a schema / breakdown of your tables (in 3NF) and a schema / uml for all necessary classes for the chosen subject matter.
+For your first project, you will pick from one of the three following subject matter and create **a schema / breakdown of your tables (in 3NF)** and **a schema / uml for all necessary classes** for the chosen subject matter.
 
 - Food vendor - suppliers (where ingredients comes from), ingredients (including type: meat, vegetables, etc), the dishes (and which ingredients they contain). Make sure pricing is a factor in the whole chain from supply to the dishes.
 
