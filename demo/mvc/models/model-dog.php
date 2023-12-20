@@ -6,7 +6,7 @@ class Dog extends Animal {
     public function makeSound() {
         echo "The cat quarrels.";
     }
-    public function meow() {
+    public function bark() {
         return "bark!";
     }
 }

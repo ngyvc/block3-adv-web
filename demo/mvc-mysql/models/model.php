@@ -35,4 +35,14 @@ class userModel {
             return false;
         }
     }
+    public function insertUser($name, $email, $address) {
+        $mysqli = $this->connect();
+        if($mysqli) {
+            $mysqli->query("INSERT INTO basic_demo (name, email, address) VALUES ('$name', '$email', '$address')");
+            $mysqli->close();
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
