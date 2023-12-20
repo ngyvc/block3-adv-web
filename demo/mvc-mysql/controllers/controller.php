@@ -30,7 +30,8 @@
         }
     }
     
-    $connection2 = new connectionObject("localhost", "ngy_adv_web_user", "5zd5z42K~", "ngy_adv_web");
+    include_once 'controllers/connection.php';
+    $connection2 = new connectionObject($host, $username, $password, $database);
     $controller = new Controller($connection2);
 
     // $controller->showUsers();
