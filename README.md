@@ -2,6 +2,23 @@
 
 Block 3 - Advanced Web Programming Course Notes
 
+## Project 1
+
+### Requirements
+
+- MVC must be present (seperate model, view, controller)
+- insert & read from tables
+- update & delete from tables (15%)
+- must insert & read from (minimum) a table with foreign key(s)
+- to get 100% (you will need to do all your tables)
+- styling and good ui / ux (bonus 5% - last thing you should be doing)
+
+### Dates
+
+- First Review: Dec 20-22
+- Final Review: Jan 3-5
+- Soft deadline: Jan 7 midnight
+
 ## Notes
 
 [plesk server & vscode setup](notes/setup.md)
