@@ -1,0 +1,21 @@
+body {
+    background-color: #f5f5f5;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+form,
+div {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: grid;
+}
+
+input {
+    font-size: 2em;
+}
