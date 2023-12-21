@@ -7,7 +7,7 @@
     <style>
         div {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
         }
         article {
             border: 1px solid black;
